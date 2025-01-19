@@ -18,9 +18,12 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./src", // src als Root
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/components/*": ["components/*"], // Alias für Komponenten
+      "@/styles/*": ["styles/*"],         // Alias für Styles
+      "@/utils/*": ["utils/*"]            // Alias für Hilfsfunktionen
+    },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
