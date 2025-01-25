@@ -22,7 +22,8 @@
     "paths": {
       "@/components/*": ["components/*"], // Alias für Komponenten
       "@/styles/*": ["styles/*"],         // Alias für Styles
-      "@/utils/*": ["utils/*"]            // Alias für Hilfsfunktionen
+      "@/utils/*": ["utils/*"],           // Alias für Hilfsfunktionen
+      "@/locales/*": ["locales/*"]
     },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

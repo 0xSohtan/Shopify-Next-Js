@@ -1,5 +1,22 @@
+import "../styles/global.css";
+import { Outfit } from 'next/font/google';
+import { Bodoni_Moda } from 'next/font/google'
+
+
+const bodoniModa = Bodoni_Moda ({
+  subset: ['latin'],
+  weight: ['400', '700'],
+  variable: "--font-bodoniModa",
+})
+
+const outfit = Outfit({
+  subset: ['latin'],
+  weight: ['400'],
+  variable: "--font-outfit",
+})
+
 export const metadata = {
-  title: "Shopify Next.js Store",
+  title: "Stoff und Stange",
   description: "Ein Next.js Shopify-Store mit TypeScript",
 };
 
@@ -9,11 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="de">
+    <html lang="de" className={outfit.className}>
       <body>
-        <header style={{ padding: "20px", background: "#f5f5f5" }}>
-          <h1>Shopify Next.js Store</h1>
-        </header>
         {children}
       </body>
     </html>

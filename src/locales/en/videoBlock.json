@@ -1,0 +1,9 @@
+{
+    "title": "Willkommen zu deinem Shopify Store!",
+    "description": "Das ist ein Beispiel für einen Block mit einem Video-Hintergrund.",
+    "buttons": {
+        "shopNow": "Jetzt shoppen",
+        "learnMore": "Mehr erfahren",
+        "watchNow": "Jetzt ansehen"
+    }
+}
